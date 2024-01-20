@@ -83,8 +83,15 @@ input {
 }
 
 input:hover,
-input:active {
+textarea:hover {
   border: 1px solid #000;
+}
+
+input:active,
+textarea:active,
+input:focus,
+textarea:focus {
+  border: 1px solid #808080;
 }
 
 textarea {
@@ -104,11 +111,6 @@ textarea {
   font-weight: 400;
 }
 
-textarea:hover,
-textarea:active {
-  border: 1px solid #000;
-}
-
 button {
   max-width: 95px;
   max-height: 40px;
@@ -125,6 +127,7 @@ button {
   border-radius: 8px;
   background-color: #4E75FF;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 button:hover {
